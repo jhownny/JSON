@@ -1,4 +1,4 @@
-let email = document.getElementById("email");
+
 
 
 
@@ -11,3 +11,4 @@ function dataNascMinima(){
 }
 let data = document.querySelector(`input[type="date"]`) 
 data.value = dataNascMinima()
+console.log(dataNascMinima())
