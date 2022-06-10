@@ -1,16 +1,18 @@
 @import url(/reset.css);
 
+;
+
 body{
     display: flex;
     width: 100vw;
-    height: 100vh;
-    background-color: #434652;
+    height: 100%;
+    background-color: #fcdebe;
     justify-content: center;
     align-items: center;
 }
 .conteiner{
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 960px;
     margin: 3%;
     display: flex;
     flex-direction: column;
@@ -19,9 +21,23 @@ body{
     background-color: #b4d4ee;
     font-family: 'Montserrat', 'sans-serif';
     font-size: 0.9em;
-    color: #578053;
+    color: #182825;
 }
-
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.titulo{
+    font-size: 3em;
+    font-weight: 500;
+}
+.subtitulo{
+    font-size: 1.4em;
+    font-weight: 400;
+}
 .dados{
     display: flex;
     flex-direction: column;
@@ -29,7 +45,11 @@ body{
 #nome{
     width: 360px;
 }
-
+.instrumento{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 fieldset{
     padding: 10px;
     margin-bottom: 10px;
@@ -51,9 +71,9 @@ fieldset.grupo.campo{
     float: left;
     margin-right: 1em;
 }
-.campo input [type= "text"], .campo input [type= "email"], .campo input [type= "nunber"], .campo select, .campo textarea{
+.campo input [type= "text"], .campo input [type= "email"],.campo input [type= "date"], .campo input [type= "nunber"], .campo select, .campo textarea{
     padding: 0.3em;
-    border: 1px solid #4a4f53;
+    border: 1px solid #016fb9;
     box-shadow: 4px 4px 6px rgba(0,0,0,0,.2); 
     display: block;
 }
